@@ -7,7 +7,7 @@
 </head>
 <body>
     <?
-        for ($x = 4; $x <= 9; pow($x,2))
+        for ($x = 4; $x <= 9; pow($x++,2)) echo $x;
     ?>
 </body>
 </html>

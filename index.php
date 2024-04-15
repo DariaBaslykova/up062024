@@ -6,8 +6,18 @@
     <title>Document</title>
 </head>
 <body>
-    <?
-        for ($x = 4; $x <= 9; pow($x++,2)) echo $x;
+    <form name="feedback" method="POST" action="index.php">
+        <label>Ваше имя: <input type="text" name="name"></label>
+        <label>Ваш email: <input type="text" name="email"></label> 
+        <label>Сообщение: <textarea name="message"></textarea></label>
+        <input type="submit" name="send" value="Отправить"> 
+    </form>
+    <?php
+        if (isset($_POST)) { 
+            echo "Имя: " . $_POST['name']; 
+            echo "<br>Email: " . $_POST['email']; 
+            echo "<br>Сообщение: " . $_POST['message']; 
+        }
     ?>
 </body>
 </html>

@@ -7,7 +7,7 @@
 </head>
 <body>
     <?
-    echo "Первые строки кода на языке PHP";
+        for ($x = 4; $x <= 9; pow($x,2))
     ?>
 </body>
 </html>
